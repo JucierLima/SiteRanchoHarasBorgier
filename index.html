@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Rancho Haras Borgier</title>
+<link rel="icon" href="favicon.png" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<header class="cabecalho">
+<video class="video-fundo" src="video.mp4" autoplay muted loop playsinline></video>
+<!-- Botão menu mobile -->
+<button class="menu-toggle" aria-label="Abrir menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class="conteudo">
+<h1><span class="cor-principal">Rancho</span> Haras Borgier</h1>
+<nav class="menu" aria-label="Menu principal">
+<a href="#inicio">Início</a>
+<a href="#eventos">Espaço</a>
+<a href="#sobre">Sobre Nós</a>
+<a href="#localizacao">Localização</a>
+<a href="#funcionamento">Funcionamento</a>
+<a href="#contato">Contato</a>
+<a href="#feedback">Feedback</a>
+</nav>
+</div>
+  </header>
+
+  <!-- Sidebar lateral -->
+  <aside class="sidebar" id="sidebar">
+    <nav class="sidebar-nav">
+      <a href="#inicio">Início</a>
+      <a href="#eventos">Espaços</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#funcionamento">Funcionamento</a>
+      <a href="#contato">Contato</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </aside>
+<!--<button id="topBtn">🔝</button>-->
+  <main>
+    <section id="inicio" class="inicio">
+      <h2>Bem-vindo ao Rancho Haras Borgier</h2>
+      <p>Um espaço de lazer e natureza com salão de festas, quadra, piscina, lago, fazendinha e viveiro de plantas.</p>
+    </section>
+
+    <!-- EVENTOS: carrossel com cards -->
+    <section id="eventos" class="eventos bg-mojo">
+      <div class="container">
+        <h2>Espaços</h2>
+
+        <div class="carrossel-wrapper" aria-label="Carrossel de espaços">
+          <!--<button class="carousel-btn prev" aria-label="Card anterior">‹</button>-->
+          <!--<button class="carousel-btn next" aria-label="Próximo card">›</button>-->
+          <div class="carrossel" id="carrossel">
+            <!-- Card 1 -->
+            <div class="card-container">
+              <article class="card" tabindex="0">
+                <div class="frente">
+                  <div class="image-carousel">
+                    <img src="salao.jpeg" alt="Salão de festas" />
+                    <img src="salao1.jpeg" alt="salao adicional" />
+                    <div class="thumbnails">
+                      <button class="thumb-btn active" data-index="0"></button>
+                      <button class="thumb-btn" data-index="1"></button>
+                    </div>
+                  </div>
+                  <h3>Salão</h3>
+                  <button class="flip-btn" aria-label="Ver detalhes do Salão">Ver detalhes</button>
+                </div>
+                <div class="verso">
+                  <h4>Salão</h4>
+                  <p>Consultar disponibilidade e atividades (totó, dominó). Reservas via WhatsApp.</p>
+                  <div class="back-indicator">🔄 Toque para voltar</div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-container">
+              <article class="card" tabindex="0">
+                <div class="frente">
+                  <div class="image-carousel">
+                    <img src="arena.jpeg" alt="Arena" />
+                    <img src="arena1.jpeg" alt="arena adicional" />
+                    <div class="thumbnails">
+                      <button class="thumb-btn active" data-index="0"></button>
+                      <button class="thumb-btn" data-index="1"></button>
+                    </div>
+                  </div>
+                  <h3>Arena</h3>
+                  <button class="flip-btn" aria-label="Ver detalhes da Arena">Ver detalhes</button>
+                </div>
+                <div class="verso">
+                  <h4>Arena</h4>
+                  <p>Arena para futevôlei e vôlei. Quiosque com lanches. Consulte horários disponíveis.</p>
+                  <div class="back-indicator">🔄 Toque para voltar</div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card-container">
+              <article class="card" tabindex="0">
+                <div class="frente">
+                  <div class="image-carousel">
+                    <img src="piscina.jpeg" alt="Piscina" />
+                    <img src="piscina1.jpeg" alt="Piscina adicional" />
+                    <div class="thumbnails">
+                      <button class="thumb-btn active" data-index="0"></button>
+                      <button class="thumb-btn" data-index="1"></button>
+                    </div>
+                  </div>
+                  <h3>Piscina</h3>
+                  <button class="flip-btn" aria-label="Ver detalhes da Piscina">Ver detalhes</button>
+                </div>
+                <div class="verso">
+                  <h4>Piscina</h4>
+                  <p>Piscina com churrasqueira e tenda, de frente ao lago. Verificar disponibilidade.</p>
+                  <div class="back-indicator">🔄 Toque para voltar</div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card-container">
+              <article class="card" tabindex="0">
+                <div class="frente">
+                  <div class="image-carousel">
+                    <img src="lago.jpeg" alt="Lago" />
+                    <img src="peixe2.jpeg" alt="lago adicional" />
+                    <div class="thumbnails">
+                      <button class="thumb-btn active" data-index="0"></button>
+                      <button class="thumb-btn" data-index="1"></button>
+                    </div>
+                  </div>
+                  <h3>Lago</h3>
+                  <button class="flip-btn" aria-label="Ver detalhes do Lago">Ver detalhes</button>
+                </div>
+                <div class="verso">
+                  <h4>Lago</h4>
+                  <p>Pesque e pague ou solte. 2 varas por pessoa. Traga linha/vara; iscas vendidas no local. Proibido redes.</p>
+                  <div class="back-indicator">🔄 Toque para voltar</div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card-container">
+              <article class="card" tabindex="0">
+                <div class="frente">
+                  <div class="image-carousel">
+                    <img src="bichos3.jpeg" alt="Fazendinha" />
+                    <img src="bichos1.jpeg" alt="fazendinha adicional" />
+                    <div class="thumbnails">
+                      <button class="thumb-btn active" data-index="0"></button>
+                      <button class="thumb-btn" data-index="1"></button>
+                    </div>
+                  </div>
+                  <h3>Fazendinha</h3>
+                  <button class="flip-btn" aria-label="Ver detalhes da Fazendinha">Ver detalhes</button>
+                </div>
+                <div class="verso">
+                  <h4>Fazendinha</h4>
+                  <p>Visitas guiadas e contato com os animais. Consulte valores e horários via WhatsApp.</p>
+                  <div class="back-indicator">🔄 Toque para voltar</div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card-container">
+              <article class="card" tabindex="0">
+                <div class="frente">
+                  <div class="image-carousel">
+                    <img src="palmeiras3.jpeg" alt="Viveiro" />
+                    <img src="palmeiras1.jpeg" alt="viveiro adicional" />
+                    <div class="thumbnails">
+                      <button class="thumb-btn active" data-index="0"></button>
+                      <button class="thumb-btn" data-index="1"></button>
+                    </div>
+                  </div>
+                  <h3>Viveiro</h3>
+                  <button class="flip-btn" aria-label="Ver detalhes do Viveiro">Ver detalhes</button>
+                </div>
+                <div class="verso">
+                  <h4>Viveiro</h4>
+                  <p>Palmeiras e plantas para venda. Consulte espécies e preços via WhatsApp.</p>
+                  <div class="back-indicator">🔄 Toque para voltar</div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <h2>Sobre Nós</h2>
+        <p>O Rancho Haras Borgier é um espaço de lazer, eventos e convivência com a natureza. Ideal para confraternizações, aniversários e fins de semana em família.</p>
+      </div>
+    </section>
+
+    <section id="funcionamento" class="funcionamento">
+      <div class="container">
+        <h2>Funcionamento</h2>
+        <ul class="func-list">
+          <li>Quadra: 05:00 às 22:00</li>
+          <li>Piscina: 08:00 às 17:00</li>
+          <li>Lago (diurno): 05:00 às 18:00</li>
+          <li>Lago (noturno): 19:00 às 04:00</li>
+          <li>Fazendinha: 07:00 às 19:00</li>
+          <li>Viveiro: 08:00 às 16:00</li>
+          <li>Salão: 06:00 às 22:00</li>
+        </ul>
+      </div>
+    </section>
+    
+
+
+    <section id="localizacao" class="localizacao bg-mojo">
+      <div class="container">
+        <h2>Localização</h2>
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.80918292051!2d-34.8615208!3d-7.9586554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3dd2629332b7%3A0x2cf9fb0d7d5cd1f!2sRancho%20Haras%20Borgier!5e1!3m2!1spt-BR!2sbr!4v1760830705264!5m2!1spt-BR!2sbr"
+            width="100%" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
+            <h3>R. Esmeralda, 250 - Fragoso, Paulista - PE, 53402-765</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato bg-contato-marrom">
+      <div class="container">
+        <h2>Contato</h2>
+        <ul>
+          <li>📱 <a href="https://wa.me/5581984894349" target="_blank" rel="noopener">WhatsApp (5581984894349 / 819-8761-8488)</a></li>
+          <li>📸 <a href="https://www.instagram.com/rancho_haras_borgier/" target="_blank" rel="noopener">Instagram (rancho_haras_borgier)</a></li>
+          <li>📧 <a href="mailto:ranchoharasborgier@gmail.com" aria-label="Enviar e-mail para Rancho Haras Borgier">Gmail (ranchoharasborgier@gmail.com)</a></li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section id="feedback" class="feedback">
+  <div class="container">
+    <h2>Deixe seu Feedback</h2>
+    <p>Sua opinião é importante para nós! Compartilhe sua experiência no Rancho Haras Borgier.</p>
+    <form id="feedback-form" class="feedback-form">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label>Avaliação:</label>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comentario">Comentário:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Enviar Feedback</button>
+    </form>
+    <div id="feedback-message" class="feedback-message"></div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Todos os direitos reservados <strong>Rancho Haras Borgier</strong>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5581984894349?text=Ol%C3%A1%20Rancho" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
